@@ -69,11 +69,19 @@ flask run
 输入链接后，账号和密码都是admin。 
 
 
+## 3. 修改启动的摄像头
+如果你有多个相机，想更改项目调用的相机，请修改[camera.py](controller/utils/camera.py)中如下位置的数字，如1、2、3等的数字。
+
+![img.png](aux_imgs/img5.png)
+
+
 ## 稍后更新，敬请期待!
 
 - [ ] 如何训练yolov5n进行口罩检测。
 
 - [ ] 尝试使用模型剪枝压缩yolov5n模型，减少模型参数和计算量。
+
+- [ ] 在网页中添加更改选择摄像头的功能
 
 该项目基于[facemask-detection-RaspberryPi](https://github.com/wenyuanw/facemask-detection-RaspberryPi)
 开发，将其中的类SSD模型换成目前较为流行的yolov5系列模型。感谢作者的开源项目！

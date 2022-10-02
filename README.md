@@ -63,7 +63,12 @@ The following operations only need to be configured when the project is started 
 After entering the link, the account and password are both **admin**.
 
 
-## Will update later, stay tuned!
+## 3. Modify the activated camera
+If you have multiple cameras and want to change the camera called by the project, please modify the numbers in the following positions in [camera.py](controller/utils/camera.py), such as numbers 1, 2, 3, etc.
+
+![img.png](aux_imgs/img5.png)
+
+## TODO
 
 - [ ] How to train yolov5n for mask detection.
 
