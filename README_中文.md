@@ -6,6 +6,8 @@
 
 yolov5n是yolov5系列中最小的一个模型，使用它进行推理，延迟还可以接受。
 
+如果对您有帮助，请点Star支持。
+
 **简单功能介绍：**
 
 - 通过调用 [和风天气API](https://dev.qweather.com/docs/widget/) 获取实时天气信息。
