@@ -38,7 +38,7 @@ After executing the above commands in sequence, a link will be output, just ente
 
 #### 2.1.2 Start from Pycharm
 
-I am using the professional version of pycharm. If you do not find the following operations, please use the startup method of the windows terminal.
+I am using the professional version of pycharm. If you do not find the following operations, please start from windows terminal.
 
 The following operations only need to be configured when the project is started for the first time. After the configuration is successful, simply click the green triangle to run the project.
 
