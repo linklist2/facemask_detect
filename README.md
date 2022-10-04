@@ -70,7 +70,7 @@ If you have multiple cameras and want to change the camera called by the project
 
 ## TODO
 
-- [ ] How to train yolov5n for mask detection.
+- [x] How to train yolov5n for mask detection,Refer to my blog post: [Yolov5 mask wearing real-time detection project (opencv+python)](https://blog.csdn.net/xiaohaigary/article/details/109445547).
 
 - [ ] Try to use model pruning to compress the yolov5n model to reduce model parameters and computation.
 
