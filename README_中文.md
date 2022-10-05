@@ -77,7 +77,7 @@ flask run
 
 ## 稍后更新，敬请期待!
 
-- [x] 如何训练yolov5n进行口罩检测，参考我的博文：[Yolov5口罩佩戴实时检测项目（opencv+python推理）](https://blog.csdn.net/xiaohaigary/article/details/109445547) 。
+- [x] 如何训练yolov5n进行口罩检测，参考我的博文：[Yolov5口罩佩戴实时检测项目（opencv+python推理）](https://blog.csdn.net/weixin_43490422/article/details/127148825?spm=1001.2014.3001.5502) 。
 
 - [ ] 尝试使用模型剪枝压缩yolov5n模型，减少模型参数和计算量。
 
