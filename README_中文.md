@@ -81,7 +81,7 @@ flask run
 
 - [ ] 尝试使用模型剪枝压缩yolov5n模型，减少模型参数和计算量。
 
-- [ ] 在网页中添加更改选择摄像头的功能
+- [x] 在网页中添加更改摄像头的功能。（已完成）
 
 该项目基于[facemask-detection-RaspberryPi](https://github.com/wenyuanw/facemask-detection-RaspberryPi)
 开发，将其中的类SSD模型换成目前较为流行的yolov5系列模型。感谢作者的开源项目！

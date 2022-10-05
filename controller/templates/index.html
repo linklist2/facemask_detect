@@ -24,18 +24,8 @@
     </div>
     </th>
     <td style="height: 145px;background-color:#6fcaca;">
-    <div class="wendu" style="width:100%">
-                <!-- 显示传感器数据 -->
-        <div class="wendupng" style="width: 20%;height: auto;float: left;"><img src="../static/images/thermometer.png"/></div>
-        <div class="wendushuju" style="width: 80%;height: auto;float: left"><p>室内温度:{{ambient}}℃</p><p>您的体温:{{temp}}℃</p></div>
-
-        </div>
-        <div style="width: 100%">
-        <input type="button" class="btn" value="测量体温"
-               onclick="javascrtpt:window.location.href='{{ url_for('home.index') }}'">
-        </div>
-    </td>
-
+        <input type="button" class="btn" value="更改设备" onclick="javascrtpt:window.location.href='{{ url_for('home.change_camera') }}'">
+    </td>>
 </tr>
 
 <tr>

@@ -74,7 +74,7 @@ If you have multiple cameras and want to change the camera called by the project
 
 - [ ] Try to use model pruning to compress the yolov5n model to reduce model parameters and computation.
 
-- [ ] Add the ability to change the camera selection in the web page.
+- [x] Added the ability to change the camera in the webpage. (completed)
 
 This project is based on [facemask-detection-RaspberryPi](https://github.com/wenyuanw/facemask-detection-RaspberryPi)
 Development, replace the SSD-like model with the more popular yolov5 series model. Thanks to the author for the open source project!

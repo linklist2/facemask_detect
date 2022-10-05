@@ -1,9 +1,15 @@
 from flask import session, render_template, redirect, url_for, Response
 from controller.modules.home import home_blu
 from controller.utils.camera import VideoCamera
+import pygame.camera
 
 video_camera = None
 global_frame = None
+global_id = 0
+
+# 获取摄像头数量
+pygame.camera.init()
+camera_nums = len(pygame.camera.list_cameras())
 
 
 # 主页
@@ -22,6 +28,17 @@ def index():
     if not username:
         return redirect(url_for("user.login"))
     return render_template("index.html", **tempInfo)
+
+
+@home_blu.route('/change_camera')
+def change_camera():
+    global video_camera
+    global global_id
+    video_camera.__del__()
+    global_id += 1
+
+    video_camera = VideoCamera(global_id % camera_nums)
+    return redirect(url_for("home.index"))
 
 
 # 获取视频流
