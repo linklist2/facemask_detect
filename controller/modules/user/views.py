@@ -1,6 +1,7 @@
 from flask import session, redirect, url_for, request, render_template
 
 from controller.modules.user import user_blu
+from controller.modules.home import close_camera
 
 
 # 登录
@@ -34,5 +35,6 @@ def login():
 def logout():
     # 删除session数据
     session.pop("username", None)
+    close_camera()
     # 返回登录页面
     return redirect(url_for("user.login"))

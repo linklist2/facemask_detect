@@ -50,14 +50,15 @@ def video_stream():
         video_camera = VideoCamera()
 
     while True:
-        frame = video_camera.get_frame()
-        if frame is not None:
-            global_frame = frame
-            yield (b'--frame\r\n'
-                   b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
-        else:
-            yield (b'--frame\r\n'
-                   b'Content-Type: image/jpeg\r\n\r\n' + global_frame + b'\r\n\r\n')
+        if video_camera is not None:
+            frame = video_camera.get_frame()
+            if frame is not None:
+                global_frame = frame
+                yield (b'--frame\r\n'
+                       b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
+            else:
+                yield (b'--frame\r\n'
+                       b'Content-Type: image/jpeg\r\n\r\n' + global_frame + b'\r\n\r\n')
 
 
 # 视频流
@@ -70,3 +71,9 @@ def video_viewer():
         return redirect(url_for("user.login"))
     return Response(video_stream(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
+
+
+def close_camera():
+    global video_camera
+    video_camera.__del__()
+    video_camera = None

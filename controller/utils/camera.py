@@ -12,6 +12,8 @@ class VideoCamera(object):
 
     def get_frame(self):
         ret, frame = self.cap.read()
+        if frame is None:
+            return None
         frame = inference(frame, target_shape=(320, 320))
 
         if ret:

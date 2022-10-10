@@ -6,6 +6,11 @@ This project uses [yolov5n](https://github.com/ultralytics/yolov5) to detect mas
 
 yolov5n is the smallest model in the yolov5 series, and its inference latency is acceptable.
 
+Login and Detect：
+
+![img.png](aux_imgs/main.png)
+
+
 **Simple function introduction:**
 
 - Get real-time weather information by calling [qweather API](https://dev.qweather.com/docs/widget/).
@@ -62,11 +67,6 @@ The following operations only need to be configured when the project is started 
 
 After entering the link, the account and password are both **admin**.
 
-
-## 3. Modify the activated camera
-If you have multiple cameras and want to change the camera called by the project, please modify the numbers in the following positions in [camera.py](controller/utils/camera.py), such as numbers 1, 2, 3, etc.
-
-![img.png](aux_imgs/img5.png)
 
 ## TODO
 
