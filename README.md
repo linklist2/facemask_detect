@@ -8,7 +8,7 @@ yolov5n is the smallest model in the yolov5 series, and its inference latency is
 
 Login and Detect：
 
-![img.png](aux_imgs/main.png)
+![img.png](aux_imgs/img6.png)
 
 
 **Simple function introduction:**
