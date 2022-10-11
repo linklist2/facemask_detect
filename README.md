@@ -72,7 +72,7 @@ After entering the link, the account and password are both **admin**.
 
 - [x] How to train yolov5n for mask detection,Refer to my blog post: [Yolov5 mask wearing real-time detection project (opencv+python)](https://blog.csdn.net/weixin_43490422/article/details/127148825?spm=1001.2014.3001.5502).
 
-- [ ] Try to use model pruning to compress the yolov5n model to reduce model parameters and computation.(completed, at models/yolov5n_mask_pruned.onnx)
+- [x] Try to use model pruning to compress the yolov5n model to reduce model parameters and computation.(completed, at models/yolov5n_mask_pruned.onnx)
 
 - [x] Added the ability to change the camera in the webpage. (completed)
 
