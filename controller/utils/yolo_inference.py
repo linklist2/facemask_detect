@@ -84,13 +84,14 @@ def inference(img_0, target_shape=(640, 640)):
     # 传入的是BGR，因此使用swapRB得到RGB图像
     img_trans = cv2.dnn.blobFromImage(image=img_data, scalefactor=1 / 255., swapRB=True)
     net = cv2.dnn.readNetFromONNX('models/yolov5n_mask.onnx')
+    # net = cv2.dnn.readNetFromONNX('models/yolov5n_mask_pruned.onnx')
     net.setInput(img_trans)
 
     # 输入数据，并获得输出，yolov5中将三个检测头的输出合并到了一起
     outputs = net.forward()
 
     # 进行NMS
-    conf_thres = 0.25
+    conf_thres = 0.40
     iou_thres = 0.45
     max_wh = 4096
 
