@@ -81,7 +81,7 @@ flask run
 
 - [x] 如何训练yolov5n进行口罩检测，参考我的博文：[Yolov5口罩佩戴实时检测项目（opencv+python推理）](https://blog.csdn.net/weixin_43490422/article/details/127148825?spm=1001.2014.3001.5502) （已完成）
 
-- [x] 尝试使用模型剪枝压缩yolov5n模型，减少模型参数和计算量。（已完成，剪枝后的模型放在models/yolov5n_mask_pruned.onnx）
+- [x] 尝试使用模型剪枝压缩yolov5n模型，减少模型参数和计算量。（已完成） 剪枝后的模型放在models/yolov5n_mask_pruned.onnx,剪枝代码:[yolov5-6.2-pruning](https://github.com/linklist2/yolov5-6.2-pruning) 
 
 - [x] 在网页中添加更改摄像头的功能。（已完成）
 
