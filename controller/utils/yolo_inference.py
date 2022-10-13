@@ -77,14 +77,12 @@ colors = [(56, 56, 255), (151, 157, 255), (31, 112, 255), (29, 178, 255), (49, 2
           (236, 24, 0), (255, 56, 132), (133, 0, 82), (255, 56, 203), (200, 149, 255), (199, 55, 255)]
 
 
-def inference(img_0, target_shape=(640, 640)):
+def inference(img_0, net, target_shape=(640, 640)):
     labels = ['face', 'face_mask']
     resize_shape = target_shape
     img_data = letterbox(img_0, resize_shape)
     # 传入的是BGR，因此使用swapRB得到RGB图像
     img_trans = cv2.dnn.blobFromImage(image=img_data, scalefactor=1 / 255., swapRB=True)
-    net = cv2.dnn.readNetFromONNX('models/yolov5n_mask.onnx')
-    # net = cv2.dnn.readNetFromONNX('models/yolov5n_mask_pruned.onnx')
     net.setInput(img_trans)
 
     # 输入数据，并获得输出，yolov5中将三个检测头的输出合并到了一起
