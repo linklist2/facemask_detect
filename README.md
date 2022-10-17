@@ -1,5 +1,8 @@
 English | [中文](README_中文.md)
 
+# Latest
+1. Created an Android version of this project:[facemask_detect_Android](https://github.com/linklist2/facemask_detect_Android)
+
 # Facemask_Detect
 
 This project uses [yolov5n](https://github.com/ultralytics/yolov5) to detect mask wearing.

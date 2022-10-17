@@ -1,5 +1,9 @@
 [English](README.md) | 中文
 
+# 最近更新
+
+1. 2022年10月17日：更新Android版本的facemask_detect,详见[facemask_detect_Android](https://github.com/linklist2/facemask_detect_Android)
+
 # 口罩佩戴检测
 
 该项目使用 [yolov5n](https://github.com/ultralytics/yolov5) 进行口罩佩戴的检测。
